@@ -1,0 +1,94 @@
+:root {
+    --primary-ad-color: #f1c530;
+    --black-ad-color: #000000;
+    --white-ad-color: #ffffff;
+}
+
+body {
+    background-color: var(--primary-ad-color);
+}
+
+#hero {
+    background-size: 100% 100%;
+    background-image: url(../img/img7.png);
+}
+
+#hero .titre {
+    margin-top: -15%!important;
+}
+
+#adversaire {
+    padding: 0%;
+}
+
+#adversaire .card-body {
+    color: black;
+    padding: 1px;
+    border-radius: 0 0 2rem 2rem;
+    display: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0.1rem 0.15rem 1px rgba(0, 0, 0, 0.8);
+    border-left: 1px solid rgba(0, 0, 0, 0.8);
+    border-right: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#adversaire img {
+    border-top: 5%;
+}
+
+.col-md-4 {
+    margin-top: 2%;
+}
+
+.card {
+    background-color: var(--primary-ad-color);
+    position: relative;
+    border: 2px solid green;
+}
+
+.card-name {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+.card-name>h2 {
+    font-size: 20px;
+    position: relative;
+    left: 3%;
+    margin: 0;
+    padding: 2px;
+}
+
+.add-bg {
+    animation: bgchange 2s;
+    background-color: rgba(17, 75, 146, 1);
+}
+
+.rm-bg {
+    animation: rmchange 2s;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+
+
+@keyframes bgchange {
+    from {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    to {
+        background-color: rgba(17, 75, 146, 1);
+    }
+}
+
+.zomm {
+    transform: scale(1.1);
+    z-index: 5;
+}
+@keyframes rmchange {
+    from {
+        background-color: rgba(17, 75, 146, 1);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
